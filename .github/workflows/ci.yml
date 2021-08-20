@@ -32,4 +32,5 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run the unit test
         run: |
-          ci_project/python manage.py test ci_project.tests
+          cd ci_project
+          python manage.py test ci_project.tests
